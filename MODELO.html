@@ -12947,8 +12947,13 @@ ul.typeahead-list  > li > a.pull-right {
 /*# sourceMappingURL=style.min.css.map */
     </style>
 <style type="text/css">
-    .highlight .hll { background-color: #ffffcc }
-.highlight  { background: #f8f8f8; }
+    pre { line-height: 125%; margin: 0; }
+td.linenos pre { color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px; }
+td.linenos pre.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+.highlight .hll { background-color: #ffffcc }
+.highlight { background: #f8f8f8; }
 .highlight .c { color: #408080; font-style: italic } /* Comment */
 .highlight .err { border: 1px solid #FF0000 } /* Error */
 .highlight .k { color: #008000; font-weight: bold } /* Keyword */
@@ -13077,7 +13082,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="ACTIVIDAD-EVALUATIVA:-M&#201;TODOS-ESTAD&#205;STICOS-AVANZADDOS"><strong>ACTIVIDAD EVALUATIVA: M&#201;TODOS ESTAD&#205;STICOS AVANZADDOS</strong><a class="anchor-link" href="#ACTIVIDAD-EVALUATIVA:-M&#201;TODOS-ESTAD&#205;STICOS-AVANZADDOS">&#182;</a></h1><h2 id="Resumen:">Resumen:<a class="anchor-link" href="#Resumen:">&#182;</a></h2><p>El presente trabajo se realizo como componente evaluativo de la materia Métodos Estadísticos Avanzados, dictada en el segundo semestre de la Maestría en Ciencia de Datos y Analítica de la Universidad EAFIT para el periodo 2020-2, en donde, se debe crear un modelo o varios modelos que permitan caracterizar la relación entre las variables PIB, Inflación, Desempleo, Tasa de Cambio, Balance Fiscal, Balance en Cuenta Corriente, Tasa de Intervención, TRM, versus los costos de ventas de las empresas registradas en las bases de datos de la Superintendencia de Sociedades de Colombia cuyos datos fueron tomados de los años 2016, 2017, 2018 y 2019.</p>
+<h1 id="ACTIVIDAD-EVALUATIVA:-M&#201;TODOS-ESTAD&#205;STICOS-AVANZADDOS"><strong>ACTIVIDAD EVALUATIVA: M&#201;TODOS ESTAD&#205;STICOS AVANZADDOS</strong><a class="anchor-link" href="#ACTIVIDAD-EVALUATIVA:-M&#201;TODOS-ESTAD&#205;STICOS-AVANZADDOS">&#182;</a></h1><h2 id="Resumen:">Resumen:<a class="anchor-link" href="#Resumen:">&#182;</a></h2><p>El presente trabajo se realizó como componente evaluativo de la materia Métodos Estadísticos Avanzados, dictada en el segundo semestre de la Maestría en Ciencia de Datos y Analítica de la Universidad EAFIT para el periodo 2020-2, en donde, se debe crear un modelo o varios modelos que permitan caracterizar la relación entre las variables PIB, Inflación, Desempleo, Tasa de Cambio, Balance Fiscal, Balance en Cuenta Corriente, Tasa de Intervención, TRM, versus los costos de ventas de las empresas registradas en las bases de datos de la Superintendencia de Sociedades de Colombia cuyos datos fueron tomados de los años 2016, 2017, 2018 y 2019.</p>
 <h3 id="Docente">Docente<a class="anchor-link" href="#Docente">&#182;</a></h3><p>Phd. Juan David Ospina</p>
 <h3 id="Integrantes">Integrantes<a class="anchor-link" href="#Integrantes">&#182;</a></h3><ul>
 <li>Javier Leomar Matamoros</li>
@@ -13093,7 +13098,7 @@ div#notebook {
 <li>Redacción del reporte: <strong>2</strong></li>
 </ul>
 <h2 id="Repositorio:">Repositorio:<a class="anchor-link" href="#Repositorio:">&#182;</a></h2><p>El desarrollo de la presente actividad también se encuentra en:</p>
-<p><a href="https://github.com/andrec230/MicroServicios/blob/master/MODELO_C1.ipynb">https://github.com/andrec230/MicroServicios/blob/master/MODELO_C1.ipynb</a></p>
+<p><a href="https://github.com/andrec230/Proyecto-MEA.git">https://github.com/andrec230/Proyecto-MEA.git</a></p>
 <h2 id="Requerimientos-para-la-ejecuci&#243;n-del-proyecto:">Requerimientos para la ejecuci&#243;n del proyecto:<a class="anchor-link" href="#Requerimientos-para-la-ejecuci&#243;n-del-proyecto:">&#182;</a></h2><p>El proyecto se desarrolló sobre un Jupyter Notebook en Anaconda, utilizando Python, son las siguientes librerias:</p>
 
 </div>
@@ -13165,10 +13170,10 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="1.-FORMULACI&#211;N-DE-LA-PREGUNTA">1. FORMULACI&#211;N DE LA PREGUNTA<a class="anchor-link" href="#1.-FORMULACI&#211;N-DE-LA-PREGUNTA">&#182;</a></h2><p>Para darle un foco más robusto a la actidad se plantea la siguiente pregunta a responder:</p>
+<h2 id="1.-FORMULACI&#211;N-DE-LA-PREGUNTA">1. FORMULACI&#211;N DE LA PREGUNTA<a class="anchor-link" href="#1.-FORMULACI&#211;N-DE-LA-PREGUNTA">&#182;</a></h2><p>Para darle un foco más robusto a la actividad se plantea la siguiente pregunta a responder:</p>
 <p>¿Cómo calcular los costos de ventas para 2020 de cada empresa de un sector en específico basado en 4 observaciones por empresa (2016,2017,2018,2019)?</p>
-<p>Para resolver esta pregunta, es necesario entender que si lo que se quiere es predecir un valor partiendo de cuatro datos históricos, no habría suficiente capacidad de "aprendizaje" para realizar esta azaña con una regresión lineal simple, pero si en lugar de intentar predecir por ejemplo, los costos de ventas de una sola empresa, usaramos la variabilidad contenida entre multiples empresas que comparten simulitudes como el sector al cuál pertencen y si son micro, pequeñas, medianas o grandes empresas, tal vez habría una mayor probabilidad de entender cuál sería el costo de una empresa e incluso la sumatoria de todas estas predicciones sería el equivalente al del sector de la economía al cual pertenecen dichas empresas.</p>
-<p>Por lo tanto, una aproximación interesante que cumple con el planteamiento anterior reside en un método de la estadística avanzada llamado modelos con efectos mixtos, el cuál se utilizó para responder la pregunta planteada, como se puede ver a continuación.</p>
+<p>Para resolver esta pregunta, es necesario entender si lo que se quiere predecir un valor partiendo de cuatro datos históricos, si es asi, no habría suficiente capacidad de "aprendizaje" para realizar esta azaña con una regresión lineal simple, pero si en lugar de intentar predecir por ejemplo, los costos de ventas de una sola empresa, usaramos la variabilidad contenida entre multiples empresas que comparten simulitudes como el sector al cuál pertencen y si son micro, pequeñas, medianas o grandes empresas, tal vez habría una mayor probabilidad de entender cuál sería el costo en ventas de una empresa e incluso la sumatoria de todas estas predicciones sería el equivalente al del sector de la economía al cual pertenecen dichas empresas.</p>
+<p>Por lo tanto, una aproximación interesante que cumple con el planteamiento anterior reside en un método de la estadística avanzada llamado <strong>modelos con efectos mixtos</strong>, el cuál se utilizó para responder la pregunta planteada, como se puede ver a continuación.</p>
 
 </div>
 </div>
@@ -13183,11 +13188,11 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>El primer paso en la búsqueda de la respuesta a la pregunta planteada, consiste en reunir los datos, limpiarlos y organizarlos.</p>
+<p>El primer paso en la búsqueda de la respuesta a la pregunta planteada, consiste en reunir los datos, hacer un porceso de limpieza y organizarlos.</p>
 <p>Para la recolección de datos se utilizaron dos fuentes:</p>
 <ol>
 <li>Bases de datos de la superintendencia de sociedades, la cual contiene el estado de resultados de empresas colombianas obligadas a reportar sus comportamientos financieros año a año por el gobierno de Colombia.</li>
-<li>Resultados de los indicadores macroeconomicos del páis publicados por le Banco de la República.</li>
+<li>Resultados de los indicadores macroeconomicos del páis publicados por le Banco de la República y disponibles en su sitio web.</li>
 </ol>
 
 </div>
@@ -13204,7 +13209,7 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Se tomaron los datos de libros de excel descargados en la página 𝚑𝚝𝚝𝚙://𝚙𝚒𝚎.𝚜𝚞𝚙𝚎𝚛𝚜𝚘𝚌𝚒𝚎𝚍𝚊𝚍𝚎𝚜.𝚐𝚘𝚟.𝚌𝚘, en dónde se encontraron para cada los libros con los nombres Plenas - Individuales, Plenas - Separados, Pymes - Individuales, Pymes - Separados.</p>
-<p>Los datos tomados fueron los de Plenas - Individuales por recomendación del docente y las pestañas a utilizar como fuentes de datos fueron "Estado de Resultados Integral" o ERI y Carátulas, el primer caso contiene los datos de la variables "costos de ventas" y el segundo el código con el cuál se indetifica la actividad económica de una empresa, llamado Clasificación Industrial Internacional Uniforme (CIIU), este último utilizado como la definición del sector en el presente trabajo.</p>
+<p>Los datos tomados fueron los de Plenas - Individuales por recomendación del profesor de la asignatura y las pestañas a utilizar como fuentes de datos fueron "Estado de Resultados Integral" o ERI y Carátulas, el primer caso contiene los datos de la variables "costos de ventas" y el segundo el código con el cuál se indetifica la actividad económica de una empresa, llamado Clasificación Industrial Internacional Uniforme (CIIU), este último utilizado como la definición del sector en el presente trabajo.</p>
 <p>Dicho lo anterior se importan los datos de los estados de resultados y las carátulas como se muestra a continuación:</p>
 
 </div>
@@ -13327,7 +13332,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>En este punto se depuran los datos de acuerdo a las necesidades del proceso de entranamiento, cómo una sola base de datos con una variable dependiente y n variables independentes, con registros únicos, sin datos nulos y la mayor consistencia entre variables a nivel de eliminación de variables redudantes y la agreación de cálculos o variables que faciliten los análisis.</p>
+<p>En este punto se depuran los datos de acuerdo a las necesidades del proceso de entranamiento, cómo una sola base de datos con una variable dependiente y <strong>n</strong> variables independentes, con registros únicos, sin datos nulos y la mayor consistencia entre variables a nivel de eliminación de variables redudantes y la agreación de cálculos o variables que faciliten los análisis.</p>
 
 </div>
 </div>
@@ -13342,7 +13347,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Debido a que el objetivo del trabajo es realizar el análisis sobre un solo sector, fue necesario organizar los datos de empresas, en especial, para analizar los sectores con el mayor volumen de empresas, de manera que se selecionara uno para llevar acabo el ejercicio.</p>
+<p>Debido a que el objetivo del trabajo es realizar el análisis sobre un solo sector, fue necesario organizar los datos de empresas, en especial, para analizar los sectores con el mayor volumén de empresas, de manera que se selecionará uno para llevar acabo el ejercicio.</p>
 
 </div>
 </div>
@@ -13388,7 +13393,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Las bases de datos vienen en muchos casos con filas repetidas, para los estados de resultados se mostraban los resultados del año en cuestión y el año anterior, lo cual al unir todas las bases implicaría la repetición de filas y por lo tanto es necesario dejar para cada año los valores de cierre de cada año, eliminando cualquier valor de años anteriores.</p>
+<p>Las bases de datos vienen en muchos casos con filas diplicadas, para los estados de resultados se mostraban los resultados del año en cuestión y el año anterior, lo cual al unir todas las bases implicaría la repetición de filas y por lo tanto es necesario dejar para cada año los valores de cierre de cada año, eliminando cualquier valor de años anteriores.</p>
 
 </div>
 </div>
@@ -13539,7 +13544,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Los criterios de depuración utilizados para obtener los sectores con un volumen de información importante y consistente fueron:</p>
+<p>Los criterios de depuración utilizados para obtener los sectores con un volumén de información importante y consistente fueron:</p>
 <ol>
 <li>Seleccionar las empresas que se mantuvieron durante los 4 años de datos</li>
 <li>Seleccionar los sectores que tuvieran al menos 20 empresas</li>
@@ -13823,7 +13828,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Se filtran los NITs que correspondan únicamente al sector seleccionado y se agregan las variables macroeconomicas, utilizando como llave el año.</p>
+<p>Se filtran los NITs que correspondan únicamente al sector seleccionado y se agregan las variables macroeconómicas, utilizando como llave el año.</p>
 
 </div>
 </div>
@@ -14215,7 +14220,7 @@ memory usage: 16.5+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Partiendo del análisis anterior, se considera de valor generar una subcategoría que divida en cuartiles a las empresas del sector, haciendo la mimica de la clasificación por micro, pequeñas, medianas y grandes empresas en función del ingreso, de manera que se le de un sentido a los puntos más lejanos en función del contexto del ejercicio.</p>
+<p>Partiendo del análisis anterior, se considera de valor el hecho de generar una subcategoría que divida en cuartiles a las empresas del sector, haciendo el símil de la clasificación por micro, pequeñas, medianas y grandes empresas en función del ingreso, de manera que se le de un sentido a los puntos más lejanos en función del contexto del ejercicio.</p>
 
 </div>
 </div>
@@ -14347,9 +14352,9 @@ memory usage: 16.5+ KB
 <p>Las ditribuciones permiten intuir cuáles variables pueden presentar alguna correlación fuerte, cuándo marcan una tendencia, para este caso algunas variables que parecen correlacionadas son:</p>
 <ul>
 <li>El desempleo con el balance de cuenta corriente, aun que el 2016 no parece ser un buen año.</li>
-<li>El balance de cuenta corriente con la trm, parece que inicia muy fuerte en 2016, puede ser que por eso no hubo una buena relación respecto al desempleo y el balance en cuenta corriente, lo que indica que la trm puede tener un peso interesante en el comportamiento del mercado.</li>
-<li>El año (year) es un indicador que afecta completamente las variables macroeconomicas, dado que año a año las políticas del gobierno sufren cambios, por lo cual no es una variable tan categórica y es muy marcado frente a la tasa de intervención.</li>
-<li>Los costos de ventas son demasiado uniformes para todas las variables pero se distribuye en lineas, lo que puede marcar clusters o el comportamiento por cuartiles planteado para explicar el presente ejercicio.</li>
+<li>El balance de cuenta corriente con la <strong>TRM</strong>, parece que inicia muy fuerte en 2016, puede ser que por eso no hubo una buena relación respecto al desempleo y el balance en cuenta corriente, lo que indica que la <strong>TRM</strong> puede tener un peso interesante en el comportamiento del mercado.</li>
+<li>El año (year) es un indicador que afecta completamente las variables macroeconómicas, dado que año a año las políticas del gobierno sufren cambios, por lo cual no es una variable tan categórica y es muy marcado frente a la tasa de intervención.</li>
+<li>Los costos de ventas son demasiado uniformes para todas las variables pero se distribuye en lineas, lo que puede marcar clústers o el comportamiento por cuartiles planteado para explicar el presente ejercicio.</li>
 <li>Hay un comportamiento claramente decreciente entre el PIB y la inflación, lo que podria implicar que una variable puede explicar perfectamente a la otra.</li>
 </ul>
 
@@ -14429,7 +14434,7 @@ memory usage: 16.5+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Es muy bajo o nulo el nivel de explicación de las variables macroeconomicas frente a las particularidades de los costos de gastos, sin embargo el efecto del tiempo en relación a las variables macroeconomicas es notorio y algunas variables que tienen una fuerte relación entre si son:</p>
+<p>Es muy bajo o nulo el nivel de explicación de las variables macroeconomicas frente a las particularidades de los costos de gastos, sin embargo el efecto del tiempo en relación a las variables macroeconómicas es notorio y algunas variables que tienen una fuerte relación entre sí son:</p>
 <ul>
 <li>La tasa de intervención y el balance en cuenta corriente: 70%</li>
 <li>La tasa de intervención y la inflación:80%</li>
@@ -14440,7 +14445,7 @@ memory usage: 16.5+ KB
 <li>El demsempleo y la trm: -97%</li>
 <li>El pib con la inflación: -98%</li>
 </ul>
-<p>Cómo podemos observar, la tasa de interveción y la trm pueden estar conteniendo toda la capacidad interpretativa de las variables macroeconomicas analizadas.</p>
+<p>Cómo podemos observar, la tasa de interveción y la <strong>TRM</strong> pueden estar conteniendo toda la capacidad interpretativa de las variables macroeconómicas analizadas.</p>
 
 </div>
 </div>
@@ -14495,7 +14500,7 @@ memory usage: 16.5+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>En este punto solo se quiere entender si mejora la capacidad interpretativa por cuartil, para este caso sigue estando por debajo del 1% absoluto para cada variable.</p>
+<p>En este punto sólo se quiere entender si mejora la capacidad interpretativa por cuartíl, para este caso sigue estando por debajo del 1% absoluto para cada variable.</p>
 
 </div>
 </div>
@@ -14551,7 +14556,7 @@ Name: costo_de_ventas, dtype: float64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>En este punto solo se quiere entender si mejora la capacidad interpretativa por cuartil, se mejoran las correlaciones de algunos casos hasta en un 10%</p>
+<p>En este punto sólo se quiere entender si mejora la capacidad interpretativa por cuartil, se mejoran las correlaciones de algunos casos hasta en un 10%</p>
 
 </div>
 </div>
@@ -14724,7 +14729,7 @@ Name: costo_de_ventas, dtype: float64</pre>
 <li>Year (año)</li>
 <li>Tasa de interveción</li>
 <li>TRM</li>
-<li>Subcategoria (Clasificación por cuártiles), como se demostro si mejoro la capacidad de explicación de la variable de respuesta al analizar las correlaciones por cuartiles en especial, para los cuartiles 3 y 4.</li>
+<li>Subcategoria (Clasificación por cuartíles), como se demostró si mejoró la capacidad de explicación de la variable de respuesta al analizar las correlaciones por cuartíles en especial, para los cuartíles 3 y 4.</li>
 </ul>
 
 </div>
@@ -14788,7 +14793,7 @@ Name: costo_de_ventas, dtype: float64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>En esta fase se plantean dos modelos (1) Sin efectos aleatorios y (2) con intercepto aleatorio para corroborar que en este escenario, con un bajo volumen de variables y un alto volumen de sujetos de estudio, los modelos con efectos mixtos tienen un mejor rendimiento.</p>
+<p>En esta fase se plantean dos modelos (1) Sin efectos aleatorios y (2) con intercepto aleatorio para corroborar que en este escenario, con un bajo volumén de variables y un alto volumén de sujetos de estudio, los modelos con efectos mixtos tienen un mejor rendimiento.</p>
 
 </div>
 </div>
@@ -14803,7 +14808,7 @@ Name: costo_de_ventas, dtype: float64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Este modelo se busca realizar un pronostico sin tener en cuenta los efectos en la variabilidad de los datos como sucede con los modelos de efectos mixtos para tener un punto de comparación.</p>
+<p>Este modelo se busca realizar un pronóstico sin tener en cuenta los efectos en la variabilidad de los datos como sucede con los modelos de efectos mixtos para tener un punto de comparación.</p>
 
 </div>
 </div>
@@ -14818,7 +14823,7 @@ Name: costo_de_ventas, dtype: float64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>El modelo se entreno teniendo en cuenta el efecto del tiempo en los datos, por lo cual se testea con el 2019, es decir el último año y el resto utilizarlo como entrenamiento.</p>
+<p>El modelo se entrenó teniendo en cuenta el efecto del tiempo en los datos, por lo cual se testea con el 2019, es decir el último año y el resto utilizarlo como entrenamiento.</p>
 
 </div>
 </div>
@@ -15129,7 +15134,7 @@ RMSE:  0.42687470444836406
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Según los ejercicios anteriores, al no existir una fuerte correlación entre las variables dependientes e independiente, es muy complejo lograr un modelo que tengan una alta capacidad predictiva, por lo tanto se desarrollo una pseudo variable que trata de imitar la clasificación de las empresas por su tamaño, la cuál mostro buenos resultados en los dos modelos planteados.</li>
-<li>También se demostro que uno de los aspectos que influyen en la capacidad predictiva en especial para los modelos mixtos, es que cada registro u observación representa el comportamiento de un sujeto en este caso una empresa, pero el solo sector al cuál pertenece no disminuye de forma importante que se esten comparando peras con manzanas, en función de las variables macroeconomicas planteadas, pero si se mitiga comparando las empresas del mismo sector por una misma clasificación basada por ejemplo en su tamaño.</li>
+<li>También se demostro que uno de los aspectos que influyen en la capacidad predictiva en especial para los modelos mixtos, es que cada registro u observación representa el comportamiento de un sujeto en este caso una empresa, pero el sólo sector al cuál pertenece no disminuye de forma importante que se esten comparando peras con manzanas, en función de las variables macroeconómicas planteadas, pero si se mitiga comparando las empresas del mismo sector por una misma clasificación basada por ejemplo en su tamaño.</li>
 <li>Respecto a los modelos, a pesar de que el modelo lineal simple tuvo un mejor R2 que el modelo con efectos mixtos, este último tuvo mejor rendimiento global, de acuerdo a los resultados del MAPE y el RMSE en comparación al modelo lineal simple, lo que puede indicar una mejor confiabilidad en la calidad de la predicción.</li>
 </ul>
 
